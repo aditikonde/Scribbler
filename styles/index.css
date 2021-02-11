@@ -1,0 +1,23 @@
+body {
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: block;
+}
+
+#content-container > button {
+    background-color: gold;
+    padding: 7px 14px;
+    border: 1px solid grey;
+    margin: 10px;
+    width: 9%;
+}
+#content-container {
+    margin-left: 0.7%;
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+
+}
+
