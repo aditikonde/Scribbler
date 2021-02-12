@@ -9,15 +9,17 @@ body {
 #content-container > button {
     background-color: gold;
     padding: 7px 14px;
-    border: 1px solid grey;
+    border: 1.6px solid grey;
+    font-weight: 600;
     margin: 10px;
     width: 9%;
+    cursor: pointer;
 }
 #content-container {
     margin-left: 0.7%;
     display: flex;
     justify-content: center;
-    margin-top: 160px;
+    margin-top: 200px;
 
 }
 

@@ -35,4 +35,5 @@ header {
     border: 1px solid grey ;
     padding: 7px 14px;
     margin-left: 10px;
+    cursor: pointer;
 }
