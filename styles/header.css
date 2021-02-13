@@ -20,13 +20,12 @@ header {
 }
 
 #logo {
-    width: 85%;
+    width: 83%;
 }
 
 #sign-btn {
     margin-top:0.5%;
-    width: 15%;
-    /* margin-left: 70%; */
+    width: 17%;
 }
 
 #sign-btn > button {
