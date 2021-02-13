@@ -32,18 +32,18 @@
     background-color: #f5f5f5;
     transform: translate(-50%, -50%) scale(1.15);
     opacity: 0;
-    z-index: 2;
+    z-index: 999;
     padding: 1.4% 2%;
     font-family: 'Nunito Sans', sans-serif;
     /* font-family: 'Raleway', sans-serif; */
     transition: transform 100ms ease-in-out, opacity 100ms ease-in-out;
 }
 
-body.showLoginForm .modal-popup {
+.showLoginForm .modal-popup {
     display: block;
 }
 
-body.showLoginForm #login-popup {
+.showLoginForm #login-popup {
     opacity: 1;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);

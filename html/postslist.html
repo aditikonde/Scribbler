@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <div class="modal-popup" id="modal-popup"></div>
     <!-- TODO: Include code for header here -->
     <div class="main-container">
         <header>
@@ -30,7 +31,7 @@
                 <button onclick="openLoginForm()">Sign In</button>
             </div>
         </header>
-        <div class="modal-popup" id="modal-popup"></div>
+
         <!-- Confirm Delete Post -->
         <div class="popup" id="del-popup">
             <div class="form">
@@ -126,8 +127,8 @@
                         the
                         same
                         purpose, they are different.</p>
-                    <div class="ellipsis">
-                        <span class="ellipsis-1" onclick="window.location='../html/post.html'">
+                    <div class="card-heading">
+                        <span class="ellipsis-1" onclick="viewPost(this)">
                             <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
                             <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                         </span>
@@ -153,7 +154,7 @@
                     <p class="post-content">One of the biggest challenges in software development is time. It’s
                         something we can’t easily get
                         more of, but linting can help us make the most out of the time we have.</p>
-                    <div class="ellipsis">
+                    <div class="card-heading">
                         <span class="ellipsis-1" onclick="window.location='../html/post.html'">
                             <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
                             <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -182,7 +183,7 @@
                         blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a
                         recognizable
                         name in the industry.</p>
-                    <div class="ellipsis">
+                    <div class="card-heading">
                         <span class="ellipsis-1" onclick="window.location='../html/post.html'">
                             <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
                             <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -211,7 +212,7 @@
                         words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different
                         people will map to different words, which
                         leads to confusion when discussing the code.</p>
-                    <div class="ellipsis">
+                    <div class="card-heading">
                         <span class="ellipsis-1" onclick="window.location='../html/post.html'">
                             <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
                             <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -241,7 +242,7 @@
                         can
                         say that you’ve created a module
                         named xyz.</p>
-                    <div class="ellipsis">
+                    <div class="card-heading">
                         <span class="ellipsis-1" onclick="window.location='../html/post.html'">
                             <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
                             <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -263,6 +264,7 @@
 
     <!-- list of all posts ends here -->
     <script src="../scripts/index.js"></script>
+    <script src="../scripts/post.js"></script>
     <script src="../scripts/postslist.js"></script>
 </body>
 
