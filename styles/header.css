@@ -36,3 +36,30 @@ header {
     margin-left: 10px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1059px) {
+  header {
+    /* background-color: lightgreen; */
+  }
+  #logo {
+    width: 70%;
+  }
+  #sign-btn {
+    margin-top:0.5%;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  header {
+    /* background-color: lightgreen; */
+  }
+  #logo {
+    width: 50%;
+  }
+  #sign-btn {
+    margin-top:0.5%;
+    width: 50%;
+  }
+}
+

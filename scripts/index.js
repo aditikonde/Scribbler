@@ -5,9 +5,6 @@ function openLoginForm() {
     // var y = document.getElementById('login-popup');
     // y.style.filter = "blur(0px) grayscale(0%)";
 
-
-
-
     document.body.classList.add("showLoginForm");
 
     // var z = document.querySelectorAll("div:not('#login-popup .modal-popup popup')");
