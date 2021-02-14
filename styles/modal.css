@@ -170,3 +170,47 @@ hr {
 #post-title {
     padding: 12px 10px;
 }
+
+@media screen and (max-width: 1060px) {
+  #createPost-popup {
+    width: 600px;
+    height: 360px;
+  }
+
+  #close-btn {
+    right: -27px;
+    font-size: 32px;
+  }
+
+  #content {
+      max-width: 575px;
+      max-height: 100px;
+  }
+
+   .modal-close {
+      font-size: 32px;
+      top: 6px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #createPost-popup {
+    width: 400px;
+    height: 360px;
+  }
+
+  #close-btn {
+    right: -7px;
+    font-size: 30px;
+  }
+
+  #content {
+      max-width: 375px;
+      max-height: 80px;
+  }
+
+  .modal-close {
+      font-size: 30px;
+      top: 6px;
+  }
+}
