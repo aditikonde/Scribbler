@@ -2,6 +2,8 @@
 
 <head>
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -25,64 +27,6 @@
                 <button onclick="openLoginForm()">Sign In</button>
             </div>
         </header>
-        <div class="modal-popup" id="modal-popup"></div>
-
-        <!-- Login popup starts here -->
-        <div class="popup" id="login-popup">
-            <form class="form">
-                <div class="form-header">
-                    <div class="modal-title">Welcome Back!</div>
-                    <div class="modal-close" onclick="closeLoginForm()">&times;</div>
-                </div>
-                <hr>
-                <div class="element">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" placeholder="Enter your username" required>
-                </div>
-                <div class="element">
-                    <label for="pwd">Password</label>
-                    <input type="password" id="pwd" placeholder="Enter your password" required>
-                </div>
-                <div class="element">
-                    <button type="submit">Sign In</button>
-                </div>
-                <div class="element">
-                    <span>Not a member? <a href="#modal-popup" onclick="openSignUp()">Sign Up</a></span>
-                </div>
-            </form>
-        </div>
-        <!-- Login popup ends here -->
-
-        <!-- SignUp popup starts here -->
-        <div class="popup" id="signup-popup">
-            <form class="form">
-                <div class="form-header">
-                    <div class="modal-title">Get Started</div>
-                    <div class="modal-close" onclick="closeSignUpForm()">&times;</div>
-                </div>
-                <hr>
-                <div class="element">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
-                </div>
-                <div class="element">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" placeholder="Enter your username" required>
-                </div>
-                <div class="element">
-                    <label for="pwd">Password</label>
-                    <input type="password" id="pwd" placeholder="Enter your password" required>
-                </div>
-                <div class="element">
-                    <label for="pwd-2">Confirm Password</label>
-                    <input type="password" id="pwd-2" placeholder="Re-enter your password" required>
-                </div>
-                <div class="element">
-                    <button type="submit">Sign Up</button>
-                </div>
-            </form>
-        </div>
-        <!-- SignUp popup ends here -->
 
         <div class="post-container">
             <h2 id="post-head">Everything you should know about ‘module’ & ‘require’ in Node.js</h2>
@@ -137,6 +81,75 @@
             </div>
 
         </div>
+
+        <!-- Login popup starts here -->
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content pp w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+                <div class="modal-card"><br>
+                    <div class="modal-title">Welcome Back!</div>
+                    <span onclick="closeLoginForm()" class=" modal-close w3-xlarge w3-display-topright">&times;</span>
+                </div>
+                <hr>
+                <form class="w3-container">
+                    <div class="w3-section">
+                        <div class="element">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" placeholder="Enter your username" required>
+                        </div>
+                        <div class="element">
+                            <label for="pwd">Password</label>
+                            <input type="password" id="pwd" placeholder="Enter your password" required>
+                        </div>
+                        <div class="element">
+                            <button type="submit">Sign In</button>
+                        </div>
+                        <div class="element">
+                            <span>Not a member? <a href="#modal-popup" onclick="openSignUp()">Sign Up</a></span>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <!-- Login popup ends here -->
+
+        <!-- SignUp popup starts here -->
+        <div id="id02" class="w3-modal">
+            <div class="w3-modal-content pp w3-card-4 w3-animate-zoom" style="max-width:600px" id="sign-in-pop">
+
+                <div class="modal-card"><br>
+                    <div class="modal-title">Get Started</div>
+                    <span onclick="closeSignUpForm()" class=" modal-close w3-xlarge w3-display-topright">&times;</span>
+                </div>
+                <hr>
+                <form class="w3-container">
+                    <div class="w3-section">
+                        <div class="element">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="element">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" placeholder="Enter your username" required>
+                        </div>
+                        <div class="element">
+                            <label for="pwd">Password</label>
+                            <input type="password" id="pwd" placeholder="Enter your password" required>
+                        </div>
+                        <div class="element">
+                            <label for="pwd-2">Confirm Password</label>
+                            <input type="password" id="pwd-2" placeholder="Re-enter your password" required>
+                        </div>
+                        <div class="element">
+                            <button type="submit">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <!-- SignUp popup ends here -->
 
         <script src="../scripts/index.js"></script>
         <script src="../scripts/post.js"></script>

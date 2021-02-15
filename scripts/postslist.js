@@ -1,7 +1,7 @@
 var postNum;
 function confirmDelPost(obj) {
     postNum = findPostNo(obj);
-    document.body.classList.add("confirm-del-post");
+    document.getElementById('id04').style.display = 'block';
 }
 
 function findPostNo(obj) {
@@ -10,11 +10,11 @@ function findPostNo(obj) {
 }
 
 function yesDel(elementId) {
-
-    document.body.classList.remove("confirm-del-post");
+    console.log(postNum);
+    document.getElementById('id04').style.display = 'none';
     document.getElementById(postNum).style.display = "none";
 }
 
 function noDel() {
-    document.body.classList.remove("confirm-del-post");
+    document.getElementById('id04').style.display = 'none';
 }

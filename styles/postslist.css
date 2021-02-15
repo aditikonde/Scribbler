@@ -117,3 +117,8 @@ body.confirm-del-post #del-popup {
     background-color: red;
 }
 
+#confirm-pop {
+    width: 27%;
+    height: 30%;
+}
+

@@ -2,6 +2,8 @@
 <html>
 
 <head>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
@@ -31,77 +33,6 @@
                 <button onclick="openLoginForm()">Sign In</button>
             </div>
         </header>
-
-        <!-- Confirm Delete Post -->
-        <div class="popup" id="del-popup">
-            <div class="form">
-                <div class="element">
-                    <p>Are you sure you want to delete this post?</p>
-                </div>
-                <div class="element">
-                    <button type="submit" id="yes-btn" onclick="yesDel(this)">Yes</button>
-                    <button type="submit" id="no-btn" onclick="noDel()">No</button>
-                </div>
-            </div>
-        </div>
-        <!-- Confirm Delete ends here -->
-
-        <!-- Login popup starts here -->
-        <div class="popup" id="login-popup">
-            <form class="form">
-                <div class="form-header">
-                    <div class="modal-title">Welcome Back!</div>
-                    <div class="modal-close" onclick="closeLoginForm()">&times;</div>
-                </div>
-                <hr>
-                <div class="element">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" placeholder="Enter your username" required>
-                </div>
-                <div class="element">
-                    <label for="pwd">Password</label>
-                    <input type="password" id="pwd" placeholder="Enter your password" required>
-                </div>
-                <div class="element">
-                    <button type="submit">Sign In</button>
-                </div>
-                <div class="element">
-                    <span>Not a member? <a href="#modal-popup" onclick="openSignUp()">Sign Up</a></span>
-                </div>
-            </form>
-        </div>
-        <!-- Login popup ends here -->
-
-        <!-- SignUp popup starts here -->
-        <div class="popup" id="signup-popup">
-            <form class="form">
-                <div class="form-header">
-                    <div class="modal-title">Get Started</div>
-                    <div class="modal-close" onclick="closeSignUpForm()">&times;</div>
-                </div>
-                <hr>
-                <div class="element">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
-                </div>
-                <div class="element">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" placeholder="Enter your username" required>
-                </div>
-                <div class="element">
-                    <label for="pwd">Password</label>
-                    <input type="password" id="pwd" placeholder="Enter your password" required>
-                </div>
-                <div class="element">
-                    <label for="pwd-2">Confirm Password</label>
-                    <input type="password" id="pwd-2" placeholder="Re-enter your password" required>
-                </div>
-                <div class="element">
-                    <button type="submit">Sign Up</button>
-                </div>
-            </form>
-        </div>
-        <!-- SignUp popup ends here -->
 
         <!-- List of posts here -->
         <div class="row">
@@ -255,8 +186,96 @@
         </div>
         <!-- List of posts ends here -->
 
-    </div>
+        <!-- Login popup starts here -->
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content pp w3-card-4 w3-animate-zoom" style="max-width:600px">
 
+                <div class="modal-card"><br>
+                    <div class="modal-title">Welcome Back!</div>
+                    <span onclick="closeLoginForm()" class=" modal-close w3-xlarge w3-display-topright">&times;</span>
+                </div>
+                <hr>
+                <form class="w3-container">
+                    <div class="w3-section">
+                        <div class="element">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" placeholder="Enter your username" required>
+                        </div>
+                        <div class="element">
+                            <label for="pwd">Password</label>
+                            <input type="password" id="pwd" placeholder="Enter your password" required>
+                        </div>
+                        <div class="element">
+                            <button type="submit">Sign In</button>
+                        </div>
+                        <div class="element">
+                            <span>Not a member? <a href="#modal-popup" onclick="openSignUp()">Sign Up</a></span>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <!-- Login popup ends here -->
+
+        <!-- SignUp popup starts here -->
+        <div id="id02" class="w3-modal">
+            <div class="w3-modal-content pp w3-card-4 w3-animate-zoom" style="max-width:600px" id="sign-in-pop">
+
+                <div class="modal-card"><br>
+                    <div class="modal-title">Get Started</div>
+                    <span onclick="closeSignUpForm()" class=" modal-close w3-xlarge w3-display-topright">&times;</span>
+                </div>
+                <hr>
+                <form class="w3-container">
+                    <div class="w3-section">
+                        <div class="element">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="element">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" placeholder="Enter your username" required>
+                        </div>
+                        <div class="element">
+                            <label for="pwd">Password</label>
+                            <input type="password" id="pwd" placeholder="Enter your password" required>
+                        </div>
+                        <div class="element">
+                            <label for="pwd-2">Confirm Password</label>
+                            <input type="password" id="pwd-2" placeholder="Re-enter your password" required>
+                        </div>
+                        <div class="element">
+                            <button type="submit">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <!-- SignUp popup ends here -->
+
+        <!-- Confirm Delete Post -->
+        <div id="id04" class="w3-modal">
+            <div class="w3-modal-content pp w3-card-4 w3-animate-zoom" id="confirm-pop">
+
+                <form class="w3-container" id="modal-header">
+                    <div class="w3-section">
+                        <div class="element">
+                            <p>Are you sure you want to delete this post?</p>
+                        </div>
+                        <div class="element">
+                            <button type="button" id="yes-btn" onclick="yesDel(this)">Yes</button>
+                            <button type="button" id="no-btn" onclick="noDel()">No</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <!-- Confirm Delete ends here -->
+
+    </div>
 
     <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
 

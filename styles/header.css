@@ -37,7 +37,7 @@ header {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1059px) {
+@media screen and (max-width: 1205px) {
   #logo {
     width: 70%;
   }
@@ -47,7 +47,7 @@ header {
   }
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 695px) {
   #logo {
     width: 50%;
   }
