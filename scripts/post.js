@@ -64,8 +64,9 @@ var clickCount = 0;
 // }
 
 function likePost() {
-    let BtnEle = document.querySelector("#like-btn");
+    var BtnEle = document.getElementById("like-btn");
     let resEle = document.querySelector("#no-likes");
+    BtnEle.innerHTML = '<i class="fas fa-thumbs-up"></i> Liked';
     clickCount++;
     if (clickCount == 1) {
         resEle.innerHTML = "1 person likes this!";
